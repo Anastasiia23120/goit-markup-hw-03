@@ -185,7 +185,7 @@ button {
 }
 
 .features-list-title {
-  padding-bottom: 8px;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -285,9 +285,7 @@ button {
 }
 
 .name-and-category {
-  padding-left: 16px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
