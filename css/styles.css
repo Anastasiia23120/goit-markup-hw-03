@@ -13,10 +13,6 @@ h5,
 h6,
 p {
   margin: 0;
-  /*  
-  margin-top: 0;
-  margin-bottom: 0;
-  */
 }
 
 ul,
@@ -30,14 +26,32 @@ a {
   text-decoration: none;
 }
 
-.container {
-  max-width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
+img {
+  display: block;
 }
 
 button {
   cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 /* ==================== /COMMON STYLES ==================== */
 
@@ -118,11 +132,14 @@ button {
 /* ==================== /HEADER STYLES ==================== */
 
 /* ==================== MAIN STYLES ==================== */
-.hero-image {
+.hero-section {
   background-color: #2e2f42;
+  padding-bottom: 188px;
+  padding-top: 188px;
 }
 
 .main-title {
+  max-width: 496px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -132,7 +149,13 @@ button {
 }
 
 .ord-serv-btn {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
   background-color: #4d5ae5;
+  cursor: pointer;
+  border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
